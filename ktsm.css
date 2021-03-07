@@ -30,7 +30,7 @@ body {
     padding-bottom: 2rem;
 }
 
-.background {
+.header__background {
     background: url("images/header2.jpg") center/cover;
     height: 50vh;
 }
@@ -40,7 +40,7 @@ body {
     padding: 0;
 }
 
-.navigation {
+.nav__navigation {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -50,7 +50,7 @@ body {
     background: #CFD8DC;
 }
 
-.navigation a {
+.nav__navigation-link {
     display: block;
     padding: 0.8rem 2rem;
     border: 1px solid #757575;
@@ -61,12 +61,31 @@ body {
     background-color: #CFD8DC;
 }
 
-.navigation a:hover,
-.navigation a:active,
-.menu li:hover,
-.menu li:active,
-.submenu li a:hover,
-.submenu li a:active {
+.menu {
+    display: block;
+    list-style: none;
+    padding: 1rem;
+    border: 1px solid #757575;
+    border-radius: 0.2rem;
+}
+
+.menu__link {
+    display: block;
+    list-style: none;
+    padding: 0.2rem;
+    border: 1px solid #757575;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: #FF5252;
+    font-weight: bold;
+    background-color: #CFD8DC;
+}
+
+.nav__navigation-link:hover,
+.nav__navigation-link:active,
+.menu__link:hover,
+.menu__link:active
+{
     color: #CFD8DC;
     background-color: #FF5252;
 }
@@ -84,17 +103,7 @@ body {
     background-color: #CFD8DC;
 }
 
-.nav__items a {
-    display: block;
-    list-style: none;
-    padding: 0.2rem;
-    border: 1px solid #757575;
-    border-radius: 0.2rem;
-    text-decoration: none;
-    color: #FF5252;
-    font-weight: bold;
-    background-color: #CFD8DC;
-}
+
 
 .nav__items {
     display: block;
@@ -110,7 +119,7 @@ section h2 {
 }
 
 @media all and (max-width: 800px) {
-    .navigation {
+    .nav__navigation {
         justify-content: space-around;
     }
     .doc_section {
@@ -125,7 +134,7 @@ section h2 {
 }
 
 @media all and (max-width: 600px) {
-    .navigation {
+    .nav__navigation {
         flex-flow: column wrap;
         padding: 0;
     }
@@ -153,7 +162,7 @@ section h2 {
 }
 
 .accordeon-head {
-    padding: 5px 10px;
+    padding: 1em 2em;
     background: #c0c0c0;
     cursor: pointer;
 }
