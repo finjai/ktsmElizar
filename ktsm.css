@@ -9,7 +9,7 @@ body {
 
 .doc_section {
     flex: 1 40%;
-    background-color: #FFCDD2;
+    background-color: #FFC107;
     border-radius: 0.8rem;
 }
 
@@ -24,7 +24,7 @@ body {
 .photo {
     flex: 1 100%;
     text-align: center;
-    background-color: #FFC107;
+    background-color: white;
     border: 1px solid #FF5252;
     border-radius: 0.8rem;
     padding-bottom: 2rem;
@@ -71,18 +71,6 @@ body {
     background-color: #FF5252;
 }
 
-ul.menu > li:hover > ul.submenu {
-    display: inherit;
-}
-
-.menu {
-    display: inline-block;
-    width: 80%;
-}
-
-.submenu {
-    display: none;
-}
 
 .nav__item {
     display: block;
@@ -157,3 +145,22 @@ section h2 {
     padding: 1.5rem;
 }
 
+.accordeon {
+    width: 80%;
+    border: 10px solid #fff;
+    box-shadow: 0 0 2em grey;
+    margin: 10px auto;
+}
+
+.accordeon-head {
+    padding: 5px 10px;
+    background: #c0c0c0;
+    cursor: pointer;
+}
+
+.accordeon-body {
+    display: none;
+    padding: 10px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 5px;
+}
