@@ -88,6 +88,10 @@ body {
 {
     color: #CFD8DC;
     background-color: #FF5252;
+    box-shadow:
+      0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25),
+      0 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.1em);
 }
 
 
@@ -172,4 +176,37 @@ section h2 {
     padding: 10px;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 5px;
+}
+
+.sl_ctr{
+    position:relative;
+    display: inline-block;
+    width:800px;
+    height:70vh;
+    overflow:hidden;
+}
+.sldr{
+    position:relative;
+    width:13000px;
+    height:300px;
+}
+.sldr img{
+    float:left;
+}
+.prv_b, .nxt_b{
+    position:absolute;
+    top:30px;
+    display:block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+    left:10px;
+    background:url(images/prv.png) no-repeat;
+}
+.nxt_b{
+    right:10px;
+    background:url(images/nxt.png) no-repeat;
 }
