@@ -35,6 +35,15 @@ body {
     height: 50vh;
 }
 
+.header__logo {
+    position: absolute;
+    top: 0;
+    left: 3em;
+    width: 100px;
+    height: 65px;
+    background: url(images/osc1.png) left/contain no-repeat;
+}
+
 .nav {
     margin: 0;
     padding: 0;
@@ -107,8 +116,6 @@ body {
     background-color: #CFD8DC;
 }
 
-
-
 .nav__items {
     display: block;
 }
@@ -123,6 +130,9 @@ section h2 {
 }
 
 @media all and (max-width: 800px) {
+    .header__logo {
+        display: none;
+    }
     .nav__navigation {
         justify-content: space-around;
     }
@@ -138,6 +148,9 @@ section h2 {
 }
 
 @media all and (max-width: 600px) {
+    .header__logo {
+        display: none;
+    }
     .nav__navigation {
         flex-flow: column wrap;
         padding: 0;
@@ -210,3 +223,4 @@ section h2 {
     right:10px;
     background:url(images/nxt.png) no-repeat;
 }
+
