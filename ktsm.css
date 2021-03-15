@@ -30,9 +30,22 @@ body {
     padding-bottom: 2rem;
 }
 
-.header__background {
-    background: url("images/header2.jpg") center/cover;
-    height: 50vh;
+.header__background-parallax {
+    background-image: url("images/header2.jpg");
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    background-image: url("images/header1.jpg");
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header__logo {
@@ -195,7 +208,6 @@ section h2 {
     position:relative;
     display: inline-block;
     width:800px;
-    height:70vh;
     overflow:hidden;
 }
 .sldr{
