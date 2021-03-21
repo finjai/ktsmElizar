@@ -236,3 +236,76 @@ section h2 {
     background:url(images/nxt.png) no-repeat;
 }
 
+.my_contact {
+    position: relative;
+    float: right;
+    margin: 20px;
+    animation: move 10s infinite alternate;
+    vertical-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    border-radius: 12px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-facebook:hover {
+    transform: rotate(10deg);
+}
+
+.fa-facebook:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 3px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.fa-google {
+    border-radius: 12px;
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-google:hover {
+    transform: scale(-1) skew(15deg);
+}
+
+.fa-skype {
+    border-radius: 12px;
+    background: #00aff0;
+    color: white;
+}
+
+.fa-skype:hover {
+    transform: translate(2px, -2px);
+}
+
+.my_contact__title {
+    color: white;
+}
+
+@keyframes move {
+    from {
+        right: 0px;
+    }
+    to {
+        right: calc(20% - 10px);
+    }
+}
+
