@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.feedback {
+.feedback__background {
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -123,4 +123,37 @@ body {
 .logofooter {
   border-radius: 2rem;
   padding: 1.5rem;
+}
+
+.feedback__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  color: #FF5252;
+}
+
+.form__kontact_inf {
+  text-align: center;
+  margin: 2em 5em;
+  background: #FF5252;
+  opacity: 85%;
+  border: 2px solid;
+  border-radius: 6px;
+}
+
+.form__kontact_inf:active {
+  background: black;
+  color: #FF5252;
+  transform: scale(1.07);
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn__send {
+  width: 100px;
+  height: 40px;
+  background: #FF5252;
+  color: #CFD8DC;
 }
