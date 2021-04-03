@@ -1,3 +1,5 @@
+@import "../main.css";
+
 body {
   margin: 0;
   background-image: url("../images/railway.jpg");
@@ -38,100 +40,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header__logo {
-  position: absolute;
-  top: 0;
-  left: 3em;
-  width: 100px;
-  height: 65px;
-  background: url(../images/osc1.png) left/contain no-repeat;
-}
-
-.nav {
-  margin: 0;
-  padding: 0;
-}
-
-.nav__navigation {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #CFD8DC;
-}
-
-.nav__navigation-link {
-  display: block;
-  padding: 0.8rem 2rem;
-  border: 1px solid #757575;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  color: #FF5252;
-  font-weight: bold;
-  background-color: #CFD8DC;
-}
-
-.menu {
-  display: block;
-  list-style: none;
-  padding: 1rem;
-  border: 1px solid #757575;
-  border-radius: 0.2rem;
-}
-
-.menu__link {
-  display: block;
-  list-style: none;
-  padding: 0.2rem;
-  border: 1px solid #757575;
-  border-radius: 0.2rem;
-  text-decoration: none;
-  color: #FF5252;
-  font-weight: bold;
-  background-color: #CFD8DC;
-}
-
-.nav__navigation-link:hover,
-.nav__navigation-link:active,
-.menu__link:hover,
-.menu__link:active
-{
-  color: #CFD8DC;
-  background-color: #FF5252;
-  box-shadow:
-    0 0.8em 1.8em -0.3em rgba(50, 50, 93, .25),
-    0 0.5em 1em -0.5em rgba(0, 0, 0, 0.3);
-  transform: translateY(-0.1em);
-}
-
-
-.nav__item {
-  display: block;
-  list-style: none;
-  padding: 1rem;
-  border: 1px solid #757575;
-  border-radius: 0.2rem;
-  text-decoration: none;
-  color: #FF5252;
-  font-weight: bold;
-  background-color: #CFD8DC;
-}
-
-.nav__items {
-  display: block;
-}
-
-.background_footer {
-  background-color: #212121;
-}
-
-section h2 {
-  text-align: center;
-  color: #212121;
 }
 
 @media all and (max-width: 800px) {
