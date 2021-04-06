@@ -1,5 +1,7 @@
 @import "main.css";
 
+@import "components/accordeon.css";
+
 body {
     margin: 0;
 }
@@ -22,68 +24,35 @@ body {
     background-size: cover;
 }
 
-
-
-@media all and (max-width: 800px) {
-    .header__logo {
-        display: none;
-    }
-    .nav__navigation {
-        justify-content: space-around;
-    }
-    .doc_section {
-        flex: 1 100%;
-    }
-    .video {
-        flex: 1 100%;
-    }
-    .photo {
-        flex: 1 100%;
-    }
+.text_block {
+    text-align: justify;
+    margin: 2em;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    background: #CFD8DC;
+    border-radius: 5px;
 }
 
-@media all and (max-width: 600px) {
-    .header__logo {
-        display: none;
-    }
-    .nav__navigation {
-        flex-flow: column wrap;
-        padding: 0;
-    }
+@media all and (max-width: 800px) {
+
     .doc_section {
         flex: 1 100%;
     }
-    .video {
+
+    .video_block {
         flex: 1 100%;
     }
-    .photo {
+
+    .photo_block {
         flex: 1 100%;
     }
+
 }
 
 .logofooter {
     border-radius: 2rem;
     padding: 1.5rem;
-}
-
-.accordeon {
-    width: 80%;
-    border: 10px solid #fff;
-    box-shadow: 0 0 2em grey;
-    margin: 10px auto;
-}
-
-.accordeon-head {
-    padding: 1em 2em;
-    background: #c0c0c0;
-    cursor: pointer;
-}
-
-.accordeon-body {
-    display: none;
-    padding: 10px;
-    border-bottom: 1px solid #c0c0c0;
-    margin-bottom: 5px;
 }
 
 .sl_ctr{

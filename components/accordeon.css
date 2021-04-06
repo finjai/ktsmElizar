@@ -1,0 +1,28 @@
+@import "../colors.css";
+
+:root {
+  --acordeon_border_color: white;
+  --acordeon_border_shadow_color: black;
+  --acordeon_head_bg: var(--dark_red);
+  --accordeon_body_border_color: var(--grey_blue);
+}
+
+.accordeon {
+  width: 80%;
+  border: 10px solid var(--acordeon_border_color);
+  box-shadow: 0 0 2em var(--acordeon_border_shadow_color);
+  margin: 10px auto;
+}
+
+.accordeon-head {
+  padding: 1em 2em;
+  background: var(--acordeon_head_bg);
+  cursor: pointer;
+}
+
+.accordeon-body {
+  display: none;
+  padding: 10px;
+  border-bottom: 1px solid var(--accordeon_body_border_color);
+  margin-bottom: 5px;
+}

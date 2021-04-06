@@ -5,24 +5,37 @@
   <title>ktsm.by</title>
   <link href="ktsm.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="js-index.js"></script>
-  <script src="slider_photo.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
-<body>
-  <nav class="nav">
-    <div class="header__logo"></div>
-    <ul class="nav__navigation">
-      <li><a class="nav__navigation-link" href="">КТСМщик</a></li>
-      <li><a class="nav__navigation-link" href="ktsm-01/index.html">КТСМ-01Д</a></li>
-      <li><a class="nav__navigation-link" href="ktsm-02/index.html">КТСМ-02</a></li>
-      <li><a class="nav__navigation-link" href="photo_gallery/index.html">Фотогалерея</a></li>
-      <li><a class="nav__navigation-link" href="feedback/index.html">Feedback</a></li>
-    </ul>
-  </nav>
-  <header class="header">
-    <div class="header__background-parallax"></div>
-  </header>
+  <body>
+  <div class="backdrop"></div>
+     <nav class="main_nav">
+       <button id="toggle-button" class="toggle-button">
+         <span class="toggle-button__bar"></span>
+         <span class="toggle-button__bar"></span>
+         <span class="toggle-button__bar"></span>
+       </button>
+      <div class="header__logo"></div>
+      <ul class="main_nav__navigation">
+        <li><a class="main_nav__navigation-link" href="index.html">КТСМщик</a></li>
+        <li><a class="main_nav__navigation-link" href="ktsm-01/index.html">КТСМ-01Д</a></li>
+        <li><a class="main_nav__navigation-link" href="ktsm-02/index.html">КТСМ-02</a></li>
+        <li><a class="main_nav__navigation-link" href="photo_gallery/index.html">Фотогалерея</a></li>
+        <li><a class="main_nav__navigation-link" href="feedback/index.html">Feedback</a></li>
+      </ul>
+     </nav>
+     <nav id="mobile-nav" class="mobile-nav">
+       <ul class="mobile-nav__items">
+         <li><a class="mobile-nav__item" href="index.html">КТСМщик</a></li>
+         <li><a class="mobile-nav__item" href="ktsm-01/index.html">КТСМ-01Д</a></li>
+         <li><a class="mobile-nav__item" href="ktsm-02/index.html">КТСМ-02</a></li>
+         <li><a class="mobile-nav__item" href="photo_gallery/index.html">Фотогалерея</a></li>
+         <li><a class="mobile-nav__item" href="feedback/index.html">Feedback</a></li>
+       </ul>
+     </nav>
+    <header class="header">
+      <div class="header__background-parallax"></div>
+    </header>
     <main class="flexcontainer">
 
       <section class="doc_section">
@@ -33,7 +46,7 @@
           </h3>
           <div class="accordeon-body">
             <ul class="menu">
-              <li><a class="menu__link" href="">312H</a></li>
+              <li><a class="menu__link" href="doc/ktsm/312Н.docx">312H</a></li>
               <li><a class="menu__link" href="">ТКП 412</a></li>
               <li><a class="menu__link" href="">ТКП 286</a></li>
             </ul>
@@ -61,7 +74,7 @@
         </div>
       </section>
 
-      <section class="video">
+      <section class="video_block">
         <h2>Видео</h2>
         <iframe width="100%" height="320"
                 src="https://www.youtube.com/embed/1OT8MLS0exE"
@@ -71,7 +84,7 @@
         </iframe>
       </section>
 
-      <section class="photo">
+      <section class="photo_block">
         <h2>Неисправности буксового узла</h2>
         <div class="sl_ctr">
           <div class="sldr">
@@ -95,7 +108,7 @@
         </div>
       </section>
 
-      <section class="text">
+      <section class="text_block">
         <h2>История</h2>
         <p>В XIX веке безопасность движения поездов на станциях и перегонах обеспечивалась уже техническими средствами
           – автоматической блокировкой и электрической централизацией стрелок и сигналов, а на локомотивах устанавливали
@@ -242,5 +255,8 @@
         <a href="#" class="fa fa-skype"><span class="span"></span></a>
       </section>
     </footer>
+     <script src="b_menu.js"></script>
+     <script src="js-index.js"></script>
+     <script src="slider_photo.js"></script>
 </body>
 </html>
