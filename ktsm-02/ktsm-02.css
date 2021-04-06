@@ -1,0 +1,64 @@
+@import "../main.css";
+
+@import"../colors.css";
+
+@import "../components/accordeon.css";
+
+@import "../components/tabs.css";
+
+:root {
+  --block_shems_border_color: var(--red1);
+}
+
+
+body {
+  margin: 0;
+}
+
+.header__background {
+  background-image: url("../images/ктсм-02.jpg");
+  height: 95vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.parallax {
+  background-image: url("../images/02.jpg");
+  height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 3em;
+  width: 100px;
+  height: 65px;
+  background: url(../images/osc1.png) left/contain no-repeat;
+}
+
+@media all and (max-width: 800px) {
+
+  .doc_section {
+    flex: 1 100%;
+  }
+  .video_block {
+    flex: 1 100%;
+  }
+  .shem__ktsm {
+    flex: 1 100%;
+  }
+}
+
+.logofooter {
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+

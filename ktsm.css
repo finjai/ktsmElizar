@@ -1,0 +1,192 @@
+@import "main.css";
+
+@import "components/accordeon.css";
+
+body {
+    margin: 0;
+}
+
+.header__background-parallax {
+    background-image: url("images/header2.jpg");
+    height: 95vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    background-image: url("images/header1.jpg");
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_block {
+    text-align: justify;
+    margin: 2em;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    background: #CFD8DC;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 800px) {
+
+    .doc_section {
+        flex: 1 100%;
+    }
+
+    .video_block {
+        flex: 1 100%;
+    }
+
+    .photo_block {
+        flex: 1 100%;
+    }
+
+}
+
+.logofooter {
+    border-radius: 2rem;
+    padding: 1.5rem;
+}
+
+.sl_ctr{
+    position:relative;
+    display: inline-block;
+    width:800px;
+    overflow:hidden;
+}
+.sldr{
+    position:relative;
+    width:13000px;
+    height:300px;
+}
+.sldr img{
+    float:left;
+}
+.prv_b, .nxt_b{
+    position:absolute;
+    top:30px;
+    display:block;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}
+.prv_b:hover, .nxt_b:hover{opacity:.6;}
+.prv_b{
+    left:10px;
+    background:url(images/prv.png) no-repeat;
+}
+.nxt_b{
+    right:10px;
+    background:url(images/nxt.png) no-repeat;
+}
+
+.my_contact {
+    position: relative;
+    float: right;
+    margin: 20px;
+    animation: move 10s infinite alternate;
+    vertical-align: center;
+}
+
+.fa {
+    position: relative;
+    top: -62px;
+    display: inline-block;
+    padding: 22px;
+    margin: auto 2px;
+    font-size: 30px;
+    width: 66px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    border-radius: 12px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-facebook:before {
+    content: "\24D5";
+}
+
+.fa-facebook:hover {
+    transform: rotate(10deg);
+}
+
+.fa-google {
+    border-radius: 12px;
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-google:before {
+    content: "\13B6";
+}
+
+.fa-google:hover {
+    transform: scale(-1) skew(15deg);
+}
+
+.fa-skype {
+    border-radius: 12px;
+    background: #00aff0;
+    color: white;
+}
+
+.fa-skype:before {
+    content: "\24E2";
+}
+
+.fa-skype:hover {
+    transform: translate(2px, -2px);
+}
+
+.my_contact__title {
+    color: white;
+}
+
+@keyframes move {
+    from {
+        right: 0px;
+    }
+    to {
+        right: calc(20% - 10px);
+    }
+}
+
+.span {
+    position: relative;
+    left: -13px;
+    top: 30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    border: 3px solid white;
+    background: black;
+}
+
+.span:after {
+    content: "";
+    position: relative;
+    left: 61px;
+    top: -2px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 13px;
+    border: 3px solid white;
+    background: black;
+}

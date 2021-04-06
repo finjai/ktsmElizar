@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>feedback</title>
+    <link href="feedback.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <nav class="main_nav">
+      <button id="toggle-button" class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+      <div class="header__logo"></div>
+      <ul class="main_nav__navigation">
+        <li><a class="main_nav__navigation-link" href="../index.html">КТСМщик</a></li>
+        <li><a class="main_nav__navigation-link" href="../ktsm-01/index.html">КТСМ-01Д</a></li>
+        <li><a class="main_nav__navigation-link" href="../ktsm-02/index.html">КТСМ-02</a></li>
+        <li><a class="main_nav__navigation-link" href="../photo_gallery/index.html">Фотогалерея</a></li>
+        <li><a class="main_nav__navigation-link" href="../feedback/index.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <nav id="mobile-nav" class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li><a class="mobile-nav__item" href="../index.html">КТСМщик</a></li>
+        <li><a class="mobile-nav__item" href="../ktsm-01/index.html">КТСМ-01Д</a></li>
+        <li><a class="mobile-nav__item" href="../ktsm-02/index.html">КТСМ-02</a></li>
+        <li><a class="mobile-nav__item" href="../photo_gallery/index.html">Фотогалерея</a></li>
+        <li><a class="mobile-nav__item" href="../feedback/index.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+    </header>
+    <main class="feedback__background">
+      <section class="feedback">
+      <h1 class="feedback__title">Отзыв посетителя</h1>
+      <form>
+        <fieldset class="form__kontact_inf">
+        <legend>Контактная информация</legend>
+        <p>
+          <label for="fname">Имя </label>
+          <input type="text" id="fname">
+        </p>
+        <p>
+          <label for="sname">Фамилия </label>
+          <input type="text" id="sname">
+        </p>
+        <p>
+          <label for="email">E-mail</label>
+          <input type="email" id="email">
+        </p>
+        </fieldset>
+        <fieldset class="form__kontact_inf">
+          <legend>Отзыв/пожелание</legend>
+          <p>
+            <textarea cols="30" rows="10" maxlength="120"></textarea>
+          </p>
+        </fieldset>
+        <p class="btn">
+        <input class="btn__send" type="submit" value="Отправить">
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="background_footer">
+    <img class="logofooter" src="../images/logo.jpg" height="200px" width="190px">
+  </footer>
+    <script src="../b_menu.js"></script>
+  </body>
+</html>

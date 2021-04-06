@@ -1,0 +1,86 @@
+@import "../main.css";
+
+body {
+  margin: 0;
+}
+
+.feedback__background {
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  filter: grayscale(100%);
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 3em;
+  width: 100px;
+  height: 65px;
+  background: url(../images/osc1.png) left/contain no-repeat;
+}
+
+.background_footer {
+  background-color: #212121;
+}
+
+@media all and (max-width: 800px) {
+  .header__logo {
+    display: none;
+  }
+  .nav__navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header__logo {
+    display: none;
+  }
+  .nav__navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+}
+
+.logofooter {
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.feedback__title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  color: #FF5252;
+}
+
+.form__kontact_inf {
+  text-align: center;
+  margin: 2em 5em;
+  background: #FF5252;
+  opacity: 85%;
+  border: 2px solid;
+  border-radius: 6px;
+}
+
+.form__kontact_inf:active {
+  background: black;
+  color: #FF5252;
+  transform: scale(1.07);
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn__send {
+  width: 100px;
+  height: 40px;
+  background: #FF5252;
+  color: #CFD8DC;
+}

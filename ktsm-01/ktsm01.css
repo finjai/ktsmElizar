@@ -1,0 +1,44 @@
+@import "../main.css";
+
+@import "../components/accordeon.css";
+
+@import "../components/tabs.css";
+
+body {
+  margin: 0;
+}
+
+.header__background {
+  background-image: url("../images/KTSM01.jpg");
+  height: 95vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  background-image: url("../images/oscillograph.jpg");
+  height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media all and (max-width: 800px) {
+  .doc_section {
+    flex: 1 100%;
+  }
+  .video_block {
+    flex: 1 100%;
+  }
+  .shem__ktsm {
+    flex: 1 100%;
+  }
+}
+
+.logofooter {
+  border-radius: 2rem;
+  padding: 1.5rem;
+}

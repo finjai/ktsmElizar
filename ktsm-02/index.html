@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ktsm02</title>
+    <link href="ktsm-02.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <nav class="main_nav">
+      <button id="toggle-button" class="toggle-button">
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+        <span class="toggle-button__bar"></span>
+      </button>
+      <div class="header__logo"></div>
+      <ul class="main_nav__navigation">
+        <li><a class="main_nav__navigation-link" href="../index.html">КТСМщик</a></li>
+        <li><a class="main_nav__navigation-link" href="../ktsm-01/index.html">КТСМ-01Д</a></li>
+        <li><a class="main_nav__navigation-link" href="../ktsm-02/index.html">КТСМ-02</a></li>
+        <li><a class="main_nav__navigation-link" href="../photo_gallery/index.html">Фотогалерея</a></li>
+        <li><a class="main_nav__navigation-link" href="../feedback/index.html">Feedback</a></li>
+      </ul>
+    </nav>
+    <nav id="mobile-nav" class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li><a class="mobile-nav__item" href="../index.html">КТСМщик</a></li>
+        <li><a class="mobile-nav__item" href="../ktsm-01/index.html">КТСМ-01Д</a></li>
+        <li><a class="mobile-nav__item" href="index.html">КТСМ-02</a></li>
+        <li><a class="mobile-nav__item" href="../photo_gallery/index.html">Фотогалерея</a></li>
+        <li><a class="mobile-nav__item" href="../feedback/index.html">Feedback</a></li>
+      </ul>
+    </nav>
+      <header class="header">
+        <div class="header__background"></div>
+      </header>
+      <main class="flexcontainer">
+        <section class="doc_section">
+          <h2>Документация</h2>
+          <div class="doc_section accordeon">
+            <h3 class="accordeon-head">
+              ОТиТБ
+            </h3>
+            <div class="accordeon-body">
+              <ul class="menu">
+                <li><a class="menu__link" href="">312H</a></li>
+                <li><a class="menu__link" href="">ТКП 412</a></li>
+                <li><a class="menu__link" href="">ТКП 286</a></li>
+              </ul>
+            </div>
+            <h3 class="accordeon-head">
+              СТП
+            </h3>
+            <div class="accordeon-body">
+              <ul class="menu">
+                <li><a class="menu__link" href="">312H</a></li>
+                <li><a class="menu__link" href="">ТКП 412</a></li>
+                <li><a class="menu__link" href="">ТКП 286</a></li>
+              </ul>
+            </div>
+            <h3 class="accordeon-head">
+              Тех. документация
+            </h3>
+            <div class="accordeon-body">
+              <ul class="menu">
+                <li><a class="menu__link" href="">312H</a></li>
+                <li><a class="menu__link" href="">ТКП 412</a></li>
+                <li><a class="menu__link" href="">ТКП 286</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="video_block">
+          <h2>Видео</h2>
+          <iframe width="100%" height="320"
+            src="https://www.youtube.com/embed/1GUo-Mp00W0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </section>
+
+        <section class="shem__ktsm">
+          <h2>Принципиальные электрические схемы</h2>
+          <div class="tabs">
+            <ul class="tabs__caption">
+              <li class="active">Схема КТСМ-02</li>
+              <li>ПК-05</li>
+              <li>БУНК-КНМ05</li>
+              <li>МУК</li>
+              <li>букса</li>
+            </ul>
+            <div class="tabs__content  active">
+              <img  src="../images/shemakts02.jpg">
+            </div>
+            <div class="tabs__content">
+              <img src="../images/пк-05.jpg">
+            </div>
+            <div class="tabs__content">
+              <img src="../images/БУНК-КНМ05.jpg">
+            </div>
+            <div class="tabs__content">
+              <img src="../images/мук.jpg">
+            </div>
+            <div class="tabs__content">
+              <img src="../images/букса.jpg">
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <div class="parallax"></div>
+      <footer class="background_footer">
+        <img class="logofooter" src="../images/logo.jpg" height="200px" width="190px">
+      </footer>
+      <script src="../b_menu.js"></script>
+      <script src="../js-index.js"></script>
+      <script src="../ktsm-01/tabs.js"></script>
+  </body>
+</html>
