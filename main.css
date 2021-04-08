@@ -15,6 +15,13 @@
   --menu_nav_bg: var(--red1);
   --toggle-button__bar_bg: var(--black1);
   --nav_item_mob_bg: var(--red1);
+  --block_shems_border_color: var(--red1);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .flexcontainer {
@@ -55,12 +62,13 @@
 }
 
 .header__logo {
-    position: absolute;
-    top: 0;
-    left: 3em;
-    width: 100px;
-    height: 65px;
-    background: url(images/osc1.png) left/contain no-repeat;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 3em;
+  width: 100px;
+  height: 65px;
+  background: url(images/osc1.png) left/contain no-repeat;
 }
 
 .main_nav {
@@ -129,6 +137,7 @@
 
 .background_footer {
     background-color: var(--footer_bg_color);
+  width: 100%;
 }
 
 section h2 {
@@ -164,18 +173,12 @@ section h2 {
   display: block !important;
 }
 
-.backdrop {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-}
 
 .mobile-nav {
+  display: none;
+}
+
+.mobile-nav__items {
   display: none;
 }
 
@@ -194,6 +197,17 @@ section h2 {
 }
 
 @media all and (max-width: 600px) {
+  .backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
   .header__logo {
       display: inline-block;
   }

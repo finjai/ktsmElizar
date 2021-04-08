@@ -3,6 +3,7 @@
 @import "components/accordeon.css";
 
 body {
+    box-sizing: border-box;
     margin: 0;
 }
 
