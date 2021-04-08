@@ -10,11 +10,6 @@
   --block_shems_border_color: var(--red1);
 }
 
-
-body {
-  margin: 0;
-}
-
 .header__background {
   background-image: url("../images/ктсм-02.jpg");
   height: 95vh;

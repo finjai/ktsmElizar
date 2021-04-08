@@ -5,6 +5,7 @@
 @import "../components/tabs.css";
 
 body {
+  box-sizing: border-box;
   margin: 0;
 }
 
